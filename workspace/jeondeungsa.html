@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>천년의 쉼터, 전등사</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css" />
+    <style>
+        body { font-family: 'Pretendard', sans-serif; word-break: keep-all; }
+        
+        .jeondeungsa-hero-bg {
+            /* AI가 선정한 고화질 사찰/자연 풍경 이미지 */
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk34-IjebyHvrTDoiqGIGDDa1OHhtquKcXWTFosMGd8Q&s=10');
+            background-size: cover; 
+            background-position: center; 
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased flex flex-col min-h-screen">
+
+    <!-- 1. 헤더 -->
+    <header class="fixed w-full top-0 z-50 transition-all duration-300 bg-white/80 backdrop-blur-md border-b border-gray-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- 로고 클릭 시 메인으로 이동 -->
+                <a href="index.html" class="flex-shrink-0 flex items-center cursor-pointer group">
+                    <span class="text-2xl font-extrabold text-blue-600 tracking-tight group-hover:scale-105 transition-transform">INCHEON</span>
+                </a>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-600 hover:text-blue-600 font-semibold transition-colors">명소 탐방</a>
+                    <!-- 역사와 문화 카테고리이므로 활성화(자연의 초록색 톤) -->
+                    <a href="history.html" class="text-green-700 font-bold transition-colors">역사와 문화</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. 히어로 섹션 (상단 배너) -->
+    <main class="pt-16 flex-grow">
+        <section class="relative jeondeungsa-hero-bg h-[50vh] flex items-center justify-center">
+            <div class="absolute inset-0 bg-gray-900/60"></div>
+            <div class="relative z-10 text-center px-4">
+                <span class="text-green-400 font-bold tracking-widest uppercase text-sm mb-2 block">Jeondeungsa Temple</span>
+                <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-4 drop-shadow-lg">천년의 쉼터</h1>
+                <p class="text-lg text-gray-200 max-w-2xl mx-auto drop-shadow-md">
+                    고즈넉한 산사에서 마주하는 내면의 평화. 단군 신화가 서린 숲길을 걸으며 일상의 지친 마음을 달래보세요.
+                </p>
+            </div>
+        </section>
+
+        <!-- 3. 본문 상세 내용 -->
+        <section class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 -mt-16 relative z-20">
+            <div class="bg-white rounded-3xl shadow-xl p-8 md:p-12 border border-green-50">
+                <h2 class="text-2xl font-bold text-gray-900 mb-6 border-b-2 border-green-100 pb-4">역사와 자연이 품은 고찰</h2>
+                <p class="text-gray-600 leading-relaxed mb-8 text-lg">
+                    단군 신화의 세 아들이 쌓았다는 전설이 내려오는 삼랑성(정족산성) 안에 자리 잡은 <strong>전등사</strong>는 현존하는 한국 불교 사찰 중 가장 오랜 역사를 간직한 곳 중 하나입니다. 계절마다 옷을 갈아입는 수백 년 된 나무들과 처마 끝에 매달린 맑은 풍경 소리가 어우러져, 종교를 떠나 방문하는 모든 이들에게 깊은 위로와 평온함을 선사합니다.
+                </p>
+
+                <h3 class="text-xl font-bold text-gray-800 mb-4 mt-12">전등사의 특별한 매력</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    
+                    <div class="rounded-xl overflow-hidden border border-gray-100 shadow-sm bg-gray-50">
+                        <!-- 처마/전통 건축물 고화질 이미지 -->
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvZ9Xoqyl3AsTnJ9psoTfYRAR0lRX920ffXOfDKKVjPg&s=10" 
+                             alt="대웅보전 처마" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h4 class="font-bold text-gray-900 mb-1">대웅보전과 나여상</h4>
+                            <p class="text-sm text-gray-500">오랜 세월을 버텨낸 목조 건축의 웅장함과 처마를 떠받치고 있는 '나여상'의 독특한 전설을 만나보세요.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="rounded-xl overflow-hidden border border-gray-100 shadow-sm bg-gray-50">
+                        <!-- 연등/사찰 숲길 고화질 이미지 -->
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiKqqZmLQyR81NY1yed9CG_z9U8bg_Lo3l8EGExP40gg&s=10" 
+                             alt="연등과 숲길" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h4 class="font-bold text-gray-900 mb-1">템플스테이와 숲길 산책</h4>
+                            <p class="text-sm text-gray-500">세속의 번뇌를 내려놓고 온전한 쉼을 경험할 수 있는 다도(茶道) 체험과 소나무 숲길 산책로가 일품입니다.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- 돌아가기 버튼 (클릭 시 history.html 로 이동) -->
+                <div class="mt-12 text-center">
+                    <a href="history.html" class="inline-block bg-gray-900 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-full transition-colors shadow-md">
+                        &larr; 역사 페이지로 돌아가기
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 4. 푸터 -->
+    <footer class="bg-gray-900 text-gray-400 py-8 text-center mt-auto w-full">
+        <p>&copy; 2026 Incheon Tour Guide. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

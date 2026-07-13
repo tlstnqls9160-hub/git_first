@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>바다 곁의 테마파크, 월미도</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css" />
+    <style>
+        body { font-family: 'Pretendard', sans-serif; word-break: keep-all; }
+        .detail-hero-bg {
+            /* 메인에서 사용한 월미도 관람차 이미지를 배경으로 활용 */
+            background-image: url('https://mblogthumb-phinf.pstatic.net/MjAyMzAxMThfMjU4/MDAxNjc0MDIxMDU3MzE5.j_uHBnwN8v48j3zJ8X_EMgGtKRWR0fxmWTi-hKNGifwg.WWpW9V4VG71TsNoLXN1tXCUALD3C6Xg49J9ZBmoY53Mg.JPEG.mellang_2/SE-7abefd57-0582-4a8e-bb64-d160269f7add.jpg?type=w800');
+            background-size: cover; 
+            background-position: center; 
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased flex flex-col min-h-screen">
+
+    <header class="fixed w-full top-0 z-50 transition-all duration-300 bg-white/80 backdrop-blur-md border-b border-gray-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- 로고 클릭 시 index.html 로 이동 -->
+                <a href="index.html" class="flex-shrink-0 flex items-center cursor-pointer group">
+                    <span class="text-2xl font-extrabold text-blue-600 tracking-tight group-hover:scale-105 transition-transform">INCHEON</span>
+                </a>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-blue-600 font-bold transition-colors hover:text-blue-800">명소 탐방</a>
+                    <a href="history.html" class="text-gray-600 hover:text-blue-600 font-semibold transition-colors">역사와 문화</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="pt-16 flex-grow">
+        <section class="relative detail-hero-bg h-[50vh] flex items-center justify-center">
+            <div class="absolute inset-0 bg-gray-900/70"></div>
+            <div class="relative z-10 text-center px-4">
+                <span class="text-purple-300 font-bold tracking-widest uppercase text-sm mb-2 block">Wolmido Theme Park</span>
+                <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-4 drop-shadow-lg">바다 곁의 테마파크</h1>
+                <p class="text-lg text-gray-200 max-w-2xl mx-auto drop-shadow-md">
+                    인천 앞바다의 낭만과 아찔한 어트랙션이 공존하는 곳. 디스코팡팡의 유쾌함과 서해의 일몰을 함께 즐겨보세요.
+                </p>
+            </div>
+        </section>
+
+        <section class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 -mt-16 relative z-20">
+            <div class="bg-white rounded-3xl shadow-xl p-8 md:p-12">
+                <h2 class="text-2xl font-bold text-gray-900 mb-6 border-b-2 border-purple-100 pb-4">젊음과 낭만이 넘치는 해안 거리</h2>
+                <p class="text-gray-600 leading-relaxed mb-8 text-lg">
+                    과거 섬이었으나 도로가 놓이면서 육지와 연결된 <strong>월미도</strong>는 인천을 대표하는 관광 명소입니다. 
+                    바다를 따라 길게 이어진 '문화의 거리'에는 카페와 횟집이 즐비하며, 거리 곳곳에서 버스킹 공연이 열려 활기를 띱니다. 
+                    무엇보다 월미도의 상징인 테마파크에서 즐기는 스릴 넘치는 놀이기구는 방문객들에게 잊지 못할 짜릿한 추억을 선사합니다.
+                </p>
+
+                <h3 class="text-xl font-bold text-gray-800 mb-4 mt-12">놓치지 말아야 할 포인트</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    
+                    <div class="rounded-xl overflow-hidden border border-gray-100 shadow-sm">
+                        <!-- 포인트 1: 월미 테마파크 -->
+                        <img src="https://images.unsplash.com/photo-1513889961551-628c1e5e2ee9?q=80&w=800&auto=format&fit=crop" 
+                             alt="놀이공원 어트랙션" class="w-full h-48 object-cover">
+                        <div class="p-4 bg-gray-50">
+                            <h4 class="font-bold text-gray-900 mb-1">월미 테마파크</h4>
+                            <p class="text-sm text-gray-500">명물 디스코팡팡의 재치 있는 입담과 하늘로 치솟는 바이킹의 아찔함을 경험하세요.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="rounded-xl overflow-hidden border border-gray-100 shadow-sm">
+                        <!-- 포인트 2: 문화의 거리 일몰 -->
+                        <img src="https://images.unsplash.com/photo-1510662145379-13537db782dc?q=80&w=800&auto=format&fit=crop" 
+                             alt="바다 일몰" class="w-full h-48 object-cover">
+                        <div class="p-4 bg-gray-50">
+                            <h4 class="font-bold text-gray-900 mb-1">서해 바다 일몰</h4>
+                            <p class="text-sm text-gray-500">문화의 거리를 거닐며 붉게 타오르는 서해안의 환상적인 일몰을 감상할 수 있습니다.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="mt-12 text-center">
+                    <a href="index.html" class="inline-block bg-gray-900 hover:bg-purple-600 text-white font-bold py-3 px-8 rounded-full transition-colors shadow-md">
+                        &larr; 메인 페이지로 돌아가기
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-gray-400 py-8 text-center mt-auto w-full">
+        <p>&copy; 2026 Incheon Tour Guide. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

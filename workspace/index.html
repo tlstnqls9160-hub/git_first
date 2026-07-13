@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인천: 과거와 미래가 만나는 곳</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css" />
+    <style>
+        body { font-family: 'Pretendard', sans-serif; word-break: keep-all; }
+        .hero-bg {
+            background-image: url('https://images.unsplash.com/photo-1617196034183-421b4917c92d?q=80&w=2000&auto=format&fit=crop');
+            background-size: cover; background-position: center;
+        }
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased">
+
+    <!-- 헤더 -->
+    <header class="fixed w-full top-0 z-50 transition-all duration-300 bg-white/80 backdrop-blur-md border-b border-gray-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- 로고 클릭 시 메인 페이지 새로고침 -->
+                <a href="index.html" class="flex-shrink-0 flex items-center cursor-pointer group">
+                    <span class="text-2xl font-extrabold text-blue-600 tracking-tight group-hover:scale-105 transition-transform">INCHEON</span>
+                </a>
+                <nav class="hidden md:flex space-x-8">
+                    <!-- 현재 메인 페이지이므로 파란색으로 강조 -->
+                    <a href="index.html" class="text-blue-600 font-bold transition-colors hover:text-blue-800">명소 탐방</a>
+                    
+                    <!-- 클릭하면 history.html로 넘어가도록 연결 -->
+                    <a href="history.html" class="text-gray-600 hover:text-red-700 font-semibold transition-colors">역사와 문화</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- 메인 배너 -->
+    <section class="relative hero-bg h-screen flex items-center justify-start pt-16">
+        <div class="absolute inset-0 bg-blue-900/40"></div>
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+            <div class="glass-effect rounded-3xl p-8 md:p-12 max-w-2xl text-white shadow-2xl">
+                <div class="mb-4 flex flex-wrap gap-2">
+                    <span class="px-3 py-1 bg-white/20 rounded-full text-sm font-medium">#스마트시티</span>
+                    <span class="px-3 py-1 bg-white/20 rounded-full text-sm font-medium">#역사문화</span>
+                    <span class="px-3 py-1 bg-white/20 rounded-full text-sm font-medium">#글로벌허브</span>
+                </div>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6 drop-shadow-md">
+                    과거와 미래가<br>만나는 곳, <span class="text-blue-300">인천</span>
+                </h1>
+                <p class="text-lg md:text-xl text-gray-100 mb-8 leading-relaxed drop-shadow">
+                    100년의 역사를 간직한 개항장부터 구름 위를 걷는 듯한 미래 도시 송도까지. 다채로운 매력이 공존하는 도시로 여러분을 초대합니다.
+                </p>
+                <a href="#explore" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full transition-transform transform hover:scale-105 shadow-lg">
+                    인천 여행 시작하기
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 명소 카드 섹션 -->
+    <section id="explore" class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">어떤 인천을 만나고 싶으신가요?</h2>
+                <p class="text-gray-500">테마별로 준비된 인천의 다채로운 모습을 확인해 보세요.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- 1. 송도 카드 (클릭 시 songdo.html 로 이동) -->
+                <a href="songdo.html" class="group bg-white rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 border border-gray-100 overflow-hidden cursor-pointer block">
+                    <div class="card-image-container h-56 relative overflow-hidden">
+                        <img src="https://i.namu.wiki/i/CoHXkq-ffCUI0Y-o66saEWBjB2XNcHovTP6dG2ylbHPBTlyXCwpvLCwMlVGUcMOAG5VMD1WQU2gmgvNmhI9v1Q.webp" 
+                             alt="미래도시 송도" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                        <h3 class="absolute bottom-5 left-5 text-white font-bold text-2xl">미래도시 산책</h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-blue-600 text-sm font-bold mb-2">#관광명소 #송도</p>
+                        <p class="text-gray-600 mb-4 leading-relaxed">
+                            빌딩 숲 사이로 흐르는 수로를 따라 걷는 센트럴파크. 반짝이는 야경 속에서 미래 도시의 낭만을 느껴보세요.
+                        </p>
+                        <span class="text-blue-500 font-semibold group-hover:text-blue-700">자세히 보기 &rarr;</span>
+                    </div>
+                <!-- 2. 차이나타운 카드 (클릭 시 chinatown.html 로 이동하도록 a 태그로 수정) -->
+                <a href="chinatown.html" class="group bg-white rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 border border-gray-100 overflow-hidden cursor-pointer block">
+                    <div class="card-image-container h-56 relative overflow-hidden">
+                        <!-- 사용자가 확정한 차이나타운 이미지 -->
+                        <img src="https://i.namu.wiki/i/THNrcPT8iCfcGD1sWT8SnxJQySX5-5ayZVHL6EYqiOSlgDZ18ZUObKFB8RyIa8r2gq_rMPFsGbREM1ROzJdnXg.webp" 
+                             alt="인천 차이나타운" 
+                             class="card-image w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                        <h3 class="absolute bottom-5 left-5 text-white font-bold text-2xl">100년의 시간여행</h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-red-500 text-sm font-bold mb-2">#역사문화 #차이나타운</p>
+                        <p class="text-gray-600 mb-4 leading-relaxed">
+                            붉은빛이 감도는 차이나타운과 근대 건축물이 보존된 개항장 거리에서 살아있는 역사를 마주합니다.
+                        </p>
+                        <span class="text-red-500 font-semibold group-hover:text-red-700">자세히 보기 &rarr;</span>
+                    </div>
+                </a>
+
+                <!-- 3. 월미도 카드 (클릭 시 wolmido.html 로 이동하도록 a 태그로 수정) -->
+                <a href="wolmido.html" class="group bg-white rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 border border-gray-100 overflow-hidden cursor-pointer block">
+                    <div class="card-image-container h-56 relative overflow-hidden">
+                        <img src="https://mblogthumb-phinf.pstatic.net/MjAyMzAxMThfMjU4/MDAxNjc0MDIxMDU3MzE5.j_uHBnwN8v48j3zJ8X_EMgGtKRWR0fxmWTi-hKNGifwg.WWpW9V4VG71TsNoLXN1tXCUALD3C6Xg49J9ZBmoY53Mg.JPEG.mellang_2/SE-7abefd57-0582-4a8e-bb64-d160269f7add.jpg?type=w800" 
+                             alt="월미도 관람차" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                        <h3 class="absolute bottom-5 left-5 text-white font-bold text-2xl">바다 곁의 테마파크</h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-purple-600 text-sm font-bold mb-2">#즐길거리 #월미도</p>
+                        <p class="text-gray-600 mb-4 leading-relaxed">
+                            서해 바다의 일몰을 감상할 수 있는 대관람차와 즐거운 비명이 섞이는 디스코팡팡의 짜릿한 추억을 만드세요.
+                        </p>
+                        <span class="text-purple-500 font-semibold group-hover:text-purple-700">자세히 보기 &rarr;</span>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 푸터 -->
+    <footer class="bg-gray-900 text-gray-400 py-8 text-center mt-auto w-full">
+        <p>&copy; 2026 Incheon Tour Guide. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

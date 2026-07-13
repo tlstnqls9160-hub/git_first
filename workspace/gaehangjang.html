@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>시간을 걷는 거리, 개항장</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css" />
+    <style>
+        body { font-family: 'Pretendard', sans-serif; word-break: keep-all; }
+        
+        .gaehang-hero-bg {
+            /* AI가 선정한 붉은 벽돌 근대 건축물 느낌의 고화질 이미지 */
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkqau-38JxLKq5wHuK10svAAwaZuqdzay7NjzmGjphnQ&s=10');
+            background-size: cover; 
+            background-position: center; 
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased flex flex-col min-h-screen">
+
+    <!-- 1. 헤더 -->
+    <header class="fixed w-full top-0 z-50 transition-all duration-300 bg-white/80 backdrop-blur-md border-b border-gray-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- 로고 클릭 시 메인으로 이동 -->
+                <a href="index.html" class="flex-shrink-0 flex items-center cursor-pointer group">
+                    <span class="text-2xl font-extrabold text-blue-600 tracking-tight group-hover:scale-105 transition-transform">INCHEON</span>
+                </a>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-600 hover:text-blue-600 font-semibold transition-colors">명소 탐방</a>
+                    <!-- 역사와 문화 카테고리이므로 붉은색 활성화 -->
+                    <a href="history.html" class="text-red-700 font-bold transition-colors">역사와 문화</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. 히어로 섹션 (상단 배너) -->
+    <main class="pt-16 flex-grow">
+        <section class="relative gaehang-hero-bg h-[50vh] flex items-center justify-center">
+            <div class="absolute inset-0 bg-gray-900/60"></div>
+            <div class="relative z-10 text-center px-4">
+                <span class="text-red-400 font-bold tracking-widest uppercase text-sm mb-2 block">Open Port Area</span>
+                <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-4 drop-shadow-lg">시간을 걷는 거리</h1>
+                <p class="text-lg text-gray-200 max-w-2xl mx-auto drop-shadow-md">
+                    1883년 개항 이후 지어진 근대 건축물들이 모여있는 곳. 붉은 벽돌 사이로 100년의 이야기가 흐릅니다.
+                </p>
+            </div>
+        </section>
+
+        <!-- 3. 본문 상세 내용 -->
+        <section class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 -mt-16 relative z-20">
+            <div class="bg-white rounded-3xl shadow-xl p-8 md:p-12 border border-red-50">
+                <h2 class="text-2xl font-bold text-gray-900 mb-6 border-b-2 border-red-100 pb-4">과거와 예술이 교차하는 공간</h2>
+                <p class="text-gray-600 leading-relaxed mb-8 text-lg">
+                    <strong>인천 개항장</strong>은 1883년 인천항이 열리며 서양과 일본, 청나라의 문화가 물밀듯이 들어왔던 무대입니다. 당시 세워졌던 영사관, 구 대불호텔, 각종 은행 건물들이 고스란히 남아있어 거리를 걷는 것만으로도 거대한 박물관에 온 듯한 기분을 느낄 수 있습니다. 최근에는 이 오래된 창고와 건물들이 트렌디한 카페와 예술가들의 창작 공간으로 재탄생하며 새로운 활기를 띠고 있습니다.
+                </p>
+
+                <h3 class="text-xl font-bold text-gray-800 mb-4 mt-12">개항장의 대표 명소</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    
+                    <div class="rounded-xl overflow-hidden border border-gray-100 shadow-sm bg-gray-50">
+                        <!-- 붉은 벽돌 창고/아트플랫폼 느낌의 고화질 이미지 -->
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQINV4FuR0pN5cD4ov47peobpFYQZxVREJXk9UN-KLvWw&s=10" 
+                             alt="인천아트플랫폼 벽돌건물" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h4 class="font-bold text-gray-900 mb-1">인천아트플랫폼</h4>
+                            <p class="text-sm text-gray-500">1930년대 지어진 물류 창고들을 리모델링하여 조성된 복합 문화 예술 공간입니다.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="rounded-xl overflow-hidden border border-gray-100 shadow-sm bg-gray-50">
+                        <!-- 고전적인 유럽/근대식 은행 건물 느낌의 고화질 이미지 -->
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhIRmS-O7Zzna8nGS86-DJuFU6Sqhd-ORwbYCqYytVXQ&s=10" 
+                             alt="개항박물관" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h4 class="font-bold text-gray-900 mb-1">인천개항박물관 (구 일본제1은행)</h4>
+                            <p class="text-sm text-gray-500">개항기의 화려했던 석조 건축 양식을 감상하며 당시의 유물들을 살펴볼 수 있습니다.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- 돌아가기 버튼 (클릭 시 history.html 로 이동) -->
+                <div class="mt-12 text-center">
+                    <a href="history.html" class="inline-block bg-gray-900 hover:bg-red-700 text-white font-bold py-3 px-8 rounded-full transition-colors shadow-md">
+                        &larr; 역사 페이지로 돌아가기
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 4. 푸터 -->
+    <footer class="bg-gray-900 text-gray-400 py-8 text-center mt-auto w-full">
+        <p>&copy; 2026 Incheon Tour Guide. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

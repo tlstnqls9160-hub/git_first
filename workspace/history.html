@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>역사와 문화 - 인천의 숨결</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css" />
+    <style>
+        body { font-family: 'Pretendard', sans-serif; word-break: keep-all; }
+        
+        /* 메인 페이지와 동일한 전체화면 배경 설정 */
+        .history-hero-bg {
+            /* 🚨 [이미지 삽입 1] 아래 url('') 안의 한글을 지우고 원하는 메인 배너 배경 이미지 주소를 넣으세요! */
+            background-image: url('https://www.agoda.com/wp-content/uploads/2024/01/Incheon-Ganghwa-History-Museum.jpg');
+            background-size: cover; 
+            background-position: center; 
+        }
+        
+        /* 글래스모피즘 효과 (메인 페이지와 통일) */
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased flex flex-col min-h-screen">
+
+    <!-- 1. 헤더 -->
+    <header class="fixed w-full top-0 z-50 transition-all duration-300 bg-white/80 backdrop-blur-md border-b border-gray-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- 로고 클릭 시 메인으로 이동 -->
+                <a href="index.html" class="flex-shrink-0 flex items-center cursor-pointer group">
+                    <span class="text-2xl font-extrabold text-blue-600 tracking-tight group-hover:scale-105 transition-transform">INCHEON</span>
+                </a>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-600 hover:text-blue-600 font-semibold transition-colors">명소 탐방</a>
+                    <!-- 현재 페이지 붉은색 활성화 -->
+                    <a href="history.html" class="text-red-700 font-bold transition-colors">역사와 문화</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. 히어로 섹션 (화면 꽉 차는 배너 + 글래스모피즘 텍스트 박스) -->
+    <main class="flex-grow">
+        <section class="relative history-hero-bg h-screen flex items-center justify-start pt-16">
+            <!-- 붉은색 단색처럼 보이게 했던 원인을 제거하고, 이미지가 잘 보이도록 얇은 검은색 오버레이로 교체 -->
+            <div class="absolute inset-0 bg-gray-900/40"></div> 
+            
+            <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+                <!-- 좌측 정렬된 반투명 텍스트 카드 -->
+                <div class="glass-effect rounded-3xl p-8 md:p-12 max-w-2xl text-white shadow-2xl">
+                    <div class="mb-4 flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-white/20 rounded-full text-sm font-medium border border-white/30">#선사시대</span>
+                        <span class="px-3 py-1 bg-white/20 rounded-full text-sm font-medium border border-white/30">#개항장</span>
+                        <span class="px-3 py-1 bg-white/20 rounded-full text-sm font-medium border border-white/30">#문화유산</span>
+                    </div>
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 drop-shadow-lg leading-tight">
+                        한반도 역사의 축소판,<br><span class="text-amber-300">인천의 숨결</span>을 걷다
+                    </h1>
+                    <p class="text-lg md:text-xl text-gray-100 mb-8 drop-shadow-md leading-relaxed">
+                        선사시대의 고인돌부터 외세에 맞선 요새, 그리고 근대화의 물결이 시작된 붉은 벽돌의 거리까지. 시대를 관통하는 유산들을 만나보세요.
+                    </p>
+                    <button onclick="document.getElementById('history-cards').scrollIntoView({behavior: 'smooth'})" class="bg-red-700 hover:bg-red-800 text-white font-bold py-3 px-8 rounded-full transition-transform transform hover:scale-105 shadow-lg border border-red-500">
+                        역사 탐방 시작하기
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. 명소 카드 섹션 -->
+        <section id="history-cards" class="py-24 relative z-20 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-4">시간이 머무는 공간</h2>
+                    <p class="text-gray-500">인천이 간직한 다채로운 역사의 현장을 소개합니다.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    
+                    <!-- 카드 1: 강화도 (선사~조선 시대) 연결 -->
+                    <a href="ganghwa.html" class="group bg-white rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 border border-amber-100 overflow-hidden cursor-pointer block">
+                        <div class="h-56 relative overflow-hidden">
+                            <!-- 🚨 [이미지 삽입 2] 아래 src="" 안의 한글을 지우고 '강화도' 관련 이미지 주소를 넣으세요! -->
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU4s8Dy6DsanDij1mxtl4WQJBz65Yw_qoDCgHYCBVAOQ&s=10" 
+                                 alt="전통 풍경" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+                            <h3 class="absolute bottom-5 left-5 text-white font-bold text-2xl">지붕 없는 박물관</h3>
+                        </div>
+                        <div class="p-6">
+                            <p class="text-amber-600 text-sm font-bold mb-2">#강화도 #고인돌 #광성보</p>
+                            <p class="text-gray-600 mb-4 leading-relaxed">
+                                유네스코 세계문화유산인 고인돌과 몽골의 침입에 맞섰던 고려궁지, 신미양요의 격전지 광성보까지 한 섬에 담겨있습니다.
+                            </p>
+                            <span class="text-amber-500 font-semibold group-hover:text-amber-700">자세히 보기 &rarr;</span>
+                        </div>
+                    </a>
+
+                    <!-- 카드 2: 근대건축전시장 (개항기) 연결 -->
+                    <a href="gaehangjang.html" class="group bg-white rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 border border-amber-100 overflow-hidden cursor-pointer block">
+                        <div class="h-56 relative overflow-hidden">
+                            <!-- 🚨 [이미지 삽입 3] 아래 src="" 안의 한글을 지우고 '개항장/근대건축' 이미지 주소를 넣으세요! -->
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdvWbvBvMbVnZNDRFmJalvsAydOMo14anyVO1o8Fi2CA&s=10" 
+                                 alt="근대 건축물 느낌의 거리" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+                            <h3 class="absolute bottom-5 left-5 text-white font-bold text-2xl">시간을 걷는 거리</h3>
+                        </div>
+                        <div class="p-6">
+                            <p class="text-red-700 text-sm font-bold mb-2">#개항장 #근대건축 #아트플랫폼</p>
+                            <p class="text-gray-600 mb-4 leading-relaxed">
+                                1883년 개항 이후 지어진 옛 일본 영사관, 은행 등 근대식 건물들이 카페와 예술 공방으로 재탄생한 이색적인 공간입니다.
+                            </p>
+                            <span class="text-red-700 font-semibold group-hover:text-red-900">자세히 보기 &rarr;</span>
+                        </div>
+                    </a>
+
+                    <!-- 카드 3: 전등사 (종교/불교 문화) 연결 -->
+                    <a href="jeondeungsa.html" class="group bg-white rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 border border-amber-100 overflow-hidden cursor-pointer block">
+                        <div class="h-56 relative overflow-hidden">
+                            <!-- 🚨 [이미지 삽입 4] 아래 src="" 안의 한글을 지우고 '전등사/사찰' 이미지 주소를 넣으세요! -->
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpzIsk3RpIjVt8CogLg6E0pSQN4WqOCaS23C2mU85SMA&s=10" 
+                                 alt="사찰 풍경" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+                            <h3 class="absolute bottom-5 left-5 text-white font-bold text-2xl">천년의 쉼터, 전등사</h3>
+                        </div>
+                        <div class="p-6">
+                            <p class="text-green-700 text-sm font-bold mb-2">#전등사 #삼랑성 #템플스테이</p>
+                            <p class="text-gray-600 mb-4 leading-relaxed">
+                                단군 신화가 서린 삼랑성 안에 자리 잡은 한국 최고(最古)의 사찰. 고즈넉한 숲길을 걸으며 마음의 평온을 찾을 수 있습니다.
+                            </p>
+                            <span class="text-green-700 font-semibold group-hover:text-green-900">자세히 보기 &rarr;</span>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 4. 푸터 -->
+    <footer class="bg-gray-900 text-gray-400 py-8 text-center mt-auto w-full">
+        <p>&copy; 2026 Incheon Tour Guide. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

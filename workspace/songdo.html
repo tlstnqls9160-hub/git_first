@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미래를 품은 도시, 송도</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css" />
+    <style>
+        body { font-family: 'Pretendard', sans-serif; word-break: keep-all; }
+        .detail-hero-bg {
+            background-image: url('https://i.namu.wiki/i/CoHXkq-ffCUI0Y-o66saEWBjB2XNcHovTP6dG2ylbHPBTlyXCwpvLCwMlVGUcMOAG5VMD1WQU2gmgvNmhI9v1Q.webp');
+            background-size: cover; background-position: center; background-attachment: fixed;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased flex flex-col min-h-screen">
+
+    <!-- 헤더 -->
+    <header class="fixed w-full top-0 z-50 transition-all duration-300 bg-white/80 backdrop-blur-md border-b border-gray-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- 로고 클릭 시 index.html 로 이동 -->
+                <a href="index.html" class="flex-shrink-0 flex items-center cursor-pointer group">
+                    <span class="text-2xl font-extrabold text-blue-600 tracking-tight group-hover:scale-105 transition-transform">INCHEON</span>
+                </a>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-blue-600 font-bold transition-colors hover:text-blue-800">명소 탐방</a>
+                    <a href="history.html" class="text-gray-600 hover:text-blue-600 font-semibold transition-colors">역사와 문화</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="pt-16 flex-grow">
+        <!-- 상단 배너 -->
+        <section class="relative detail-hero-bg h-[50vh] flex items-center justify-center">
+            <div class="absolute inset-0 bg-gray-900/60"></div>
+            <div class="relative z-10 text-center px-4">
+                <span class="text-blue-300 font-bold tracking-widest uppercase text-sm mb-2 block">Songdo Smart City</span>
+                <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-4 drop-shadow-lg">미래를 품은 도시, 송도</h1>
+                <p class="text-lg text-gray-200 max-w-2xl mx-auto drop-shadow-md">
+                    바다를 메워 만든 기적의 땅. 하늘을 찌르는 마천루와 푸른 공원이 어우러진 스마트 시티를 만나보세요.
+                </p>
+            </div>
+        </section>
+
+        <!-- 본문 내용 -->
+        <section class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 -mt-16 relative z-20">
+            <div class="bg-white rounded-3xl shadow-xl p-8 md:p-12">
+                <h2 class="text-2xl font-bold text-gray-900 mb-6 border-b-2 border-blue-100 pb-4">도심 속 완벽한 휴식처</h2>
+                <p class="text-gray-600 leading-relaxed mb-8 text-lg">
+                    송도국제도시는 단순한 빌딩 숲이 아닙니다. 도시 중심을 관통하는 거대한 <strong>'센트럴파크'</strong>는 뉴욕 센트럴파크를 모티브로 조성되었으며, 
+                    국내 최초로 바닷물을 끌어와 만든 해수 공원입니다. 수상 택시를 타고 빌딩 숲 사이를 유람하거나, 밤이 되면 화려하게 빛나는 마천루의 야경을 감상할 수 있습니다.
+                </p>
+
+                <h3 class="text-xl font-bold text-gray-800 mb-4 mt-12">놓치지 말아야 할 포인트</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                
+                <div class="rounded-xl overflow-hidden border border-gray-100 shadow-sm">
+                    <!-- 1. 센트럴파크 이미지 변경 -->
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2e/b3/81/01/caption.jpg?w=1200&h=-1&s=1" 
+                         alt="센트럴파크" class="w-full h-48 object-cover">
+                    <div class="p-4 bg-gray-50">
+                        <h4 class="font-bold text-gray-900 mb-1">송도 센트럴파크</h4>
+                        <p class="text-sm text-gray-500">이국적인 풍경을 자랑하는 도심 속 오아시스.</p>
+                    </div>
+                </div>
+                
+                <div class="rounded-xl overflow-hidden border border-gray-100 shadow-sm">
+                    <!-- 2. 송도컨벤시아 이미지 및 설명으로 변경 -->
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvFO9o77lOCR8IKEeuJooJlWP2aEDmK9Az0TUih2jv3g&s=10" 
+                         alt="송도컨벤시아" class="w-full h-48 object-cover">
+                    <div class="p-4 bg-gray-50">
+                        <h4 class="font-bold text-gray-900 mb-1">송도컨벤시아</h4>
+                        <p class="text-sm text-gray-500">태백산맥을 모티브로 한 독특한 외관의 국제 전시·컨벤션 센터.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- 돌아가기 버튼 (클릭 시 index.html 로 이동) -->
+                <div class="mt-12 text-center">
+                    <a href="index.html" class="inline-block bg-gray-900 hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-full transition-colors shadow-md">
+                        &larr; 메인 페이지로 돌아가기
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-gray-400 py-8 text-center mt-auto w-full">
+        <p>&copy; 2026 Incheon Tour Guide. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>지붕 없는 박물관, 강화도</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css" />
+    <style>
+        body { font-family: 'Pretendard', sans-serif; word-break: keep-all; }
+        
+        .ganghwa-hero-bg {
+            /* AI가 자동으로 고화질의 아름다운 전통 풍경 이미지를 삽입했습니다 */
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr3FsIx95txkWPHc-xXwKObrIBKxuqIYpel1lwGa7jPQ&s=10');
+            background-size: cover; 
+            background-position: center; 
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased flex flex-col min-h-screen">
+
+    <!-- 1. 헤더 -->
+    <header class="fixed w-full top-0 z-50 transition-all duration-300 bg-white/80 backdrop-blur-md border-b border-gray-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- 로고 클릭 시 메인으로 이동 -->
+                <a href="index.html" class="flex-shrink-0 flex items-center cursor-pointer group">
+                    <span class="text-2xl font-extrabold text-blue-600 tracking-tight group-hover:scale-105 transition-transform">INCHEON</span>
+                </a>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-600 hover:text-blue-600 font-semibold transition-colors">명소 탐방</a>
+                    <!-- 현재 강화도는 역사/문화 카테고리이므로 붉은색 활성화 -->
+                    <a href="history.html" class="text-red-700 font-bold transition-colors">역사와 문화</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. 히어로 섹션 (상단 배너) -->
+    <main class="pt-16 flex-grow">
+        <section class="relative ganghwa-hero-bg h-[50vh] flex items-center justify-center">
+            <div class="absolute inset-0 bg-gray-900/60"></div>
+            <div class="relative z-10 text-center px-4">
+                <span class="text-amber-400 font-bold tracking-widest uppercase text-sm mb-2 block">Ganghwado Island</span>
+                <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-4 drop-shadow-lg">지붕 없는 박물관</h1>
+                <p class="text-lg text-gray-200 max-w-2xl mx-auto drop-shadow-md">
+                    수천 년 전 고인돌부터 외세의 침략에 맞섰던 굳건한 돈대까지. 섬 전체가 한반도 역사의 축소판입니다.
+                </p>
+            </div>
+        </section>
+
+        <!-- 3. 본문 상세 내용 -->
+        <section class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 -mt-16 relative z-20">
+            <div class="bg-white rounded-3xl shadow-xl p-8 md:p-12 border border-amber-50">
+                <h2 class="text-2xl font-bold text-gray-900 mb-6 border-b-2 border-amber-100 pb-4">수천 년의 시간이 머무는 곳</h2>
+                <p class="text-gray-600 leading-relaxed mb-8 text-lg">
+                    인천에서 바다 건너 만나는 <strong>강화도</strong>는 발길 닿는 곳마다 역사가 숨 쉬는 특별한 장소입니다. 
+                    청동기 시대의 대표적 무덤인 고인돌이 흩어져 있고, 고려 시대에는 몽골의 침입을 피해 임시 도읍 역할을 했던 고려궁지가 남아있습니다. 또한 조선 후기 서양 세력의 함대와 치열한 전투를 벌였던 초지진, 광성보 등의 유적은 아픈 역사를 증명하는 동시에 바다를 바라보는 뛰어난 절경을 자랑합니다.
+                </p>
+
+                <h3 class="text-xl font-bold text-gray-800 mb-4 mt-12">강화도의 대표 유적지</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    
+                    <div class="rounded-xl overflow-hidden border border-gray-100 shadow-sm bg-gray-50">
+                        <!-- AI가 선정한 선사시대/역사적 돌림판 느낌의 고화질 이미지 삽입 완료 -->
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlwT8xo_4XAnX247T9thNcsDLhaN8KQ0JxRd5qMbv5Cw&s=10" 
+                             alt="강화 고인돌" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h4 class="font-bold text-gray-900 mb-1">강화 고인돌 유적 (유네스코)</h4>
+                            <p class="text-sm text-gray-500">탁자식 고인돌 중 한국에서 가장 큰 규모를 자랑하며 선사시대의 숨결을 느낄 수 있습니다.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="rounded-xl overflow-hidden border border-gray-100 shadow-sm bg-gray-50">
+                        <!-- AI가 선정한 한국의 아름다운 전통 성곽 고화질 이미지 삽입 완료 -->
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwiiVjuS7kMeECWbx4fQwqJGT64rbJd--xThxa76VZ7g&s" 
+                             alt="광성보 성곽" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h4 class="font-bold text-gray-900 mb-1">광성보와 돈대</h4>
+                            <p class="text-sm text-gray-500">신미양요 당시 미군과 격전을 벌였던 요새로, 바다를 따라 이어진 성곽길이 아름답습니다.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- 돌아가기 버튼 (클릭 시 history.html 로 이동) -->
+                <div class="mt-12 text-center">
+                    <a href="history.html" class="inline-block bg-gray-900 hover:bg-amber-600 text-white font-bold py-3 px-8 rounded-full transition-colors shadow-md">
+                        &larr; 역사 페이지로 돌아가기
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 4. 푸터 -->
+    <footer class="bg-gray-900 text-gray-400 py-8 text-center mt-auto w-full">
+        <p>&copy; 2026 Incheon Tour Guide. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
